@@ -45,13 +45,13 @@ export default function CreatePostcardScreen() {
     // Simulate minting process
     setTimeout(() => {
       setIsMinting(false);
-      router.push("/home");
+      router.push("/");
     }, 2000);
   };
 
   const handleCancel = () => {
     if (step === "image") {
-      router.push("/home");
+      router.push("/");
     } else if (step === "details") {
       setStep("image");
     } else {
